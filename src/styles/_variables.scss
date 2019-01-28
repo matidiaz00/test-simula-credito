@@ -1,0 +1,54 @@
+$spacer: 50px !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: 5px,
+    2: 15px,
+    3: ($spacer / 2),
+    4: $spacer,
+    5: ($spacer * 2),
+  ),
+  $spacers
+);
+
+$primary:       #0b548b !default;
+$secondary:     #003b67 !default;
+$success:       #17aa8d !default;
+$info:          #00355d !default;
+$warning:       #d6a614 !default;
+$danger:        #c32f2f !default;
+$light:         #ffffff !default;
+$dark:          #333333 !default;
+
+$font-family-base: 'Montserrat', sans-serif !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$h1-font-size:                40px !default;
+$h2-font-size:                30px !default;
+$h3-font-size:                23px !default;
+$h4-font-size:                19px !default;
+$h5-font-size:                18px !default;
+$h6-font-size:                15px !default;
+
+$btn-padding-y:               10px !default;
+$btn-padding-x:               20px !default;
+$btn-font-size:               20px !default;
+
+$btn-padding-y-sm:            $btn-padding-y !default;
+$btn-padding-x-sm:            $btn-padding-x !default;
+$btn-font-size-sm:            $btn-font-size - 5px !default;
+$btn-line-height-sm:          1.2 !default;
+
+$btn-padding-y-lg:            $btn-padding-y !default;
+$btn-padding-x-lg:            $btn-padding-x !default;
+$btn-font-size-lg:            $btn-font-size + 3px !default;
+
+$btn-box-shadow:              none !default;
+
+$btn-border-radius:           0 !default;
+$btn-border-radius-lg:        0 !default;
+$btn-border-radius-sm:        0 !default;

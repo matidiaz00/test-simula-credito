@@ -1,0 +1,77 @@
+::selection {
+    background: $success;
+    color: $white;
+}
+
+.bg-gradient {
+    background: $primary;
+    background: -moz-linear-gradient(-45deg, $primary 1%, $secondary 100%);
+    background: -webkit-linear-gradient(-45deg, $primary 1%,$secondary 100%);
+    background: linear-gradient(135deg, $primary 1%,$secondary 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='$secondary',GradientType=1 );
+    @include media-breakpoint-down(sm) {
+        background: $secondary !important;
+    }
+}
+
+.money::before {
+    content: "$";
+    margin-right: 7px;
+}
+
+.data-box {
+    min-width: 150px;
+    text-align: center;
+}
+
+.outline-0,
+.outline-0:focus,
+.outline-0:hover,
+.outline-0:active {
+    outline: 0 !important;
+}
+
+.rc-slider {
+    .rc-slider-track,
+    .rc-slider-dot {
+        display: none;
+    }
+    .rc-slider-rail {
+        border-radius: 0;
+        background-color: $light;
+        height: 6px;
+    }
+    .rc-slider-handle {
+        border: 0px;
+        width: 18px;
+        margin-top: -6px;
+        height: 18px;
+    }
+    .rc-slider-mark-text-active,
+    .rc-slider-mark-text {
+        color: $light;
+        font-size: 17px;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+        background-color: transparent !important;
+    }
+    @include media-breakpoint-up(md) {
+        max-width: 650px;
+    }
+}
+
+@media (max-height: 700px) {
+    .bg-gradient {
+        background: $secondary !important;
+    }
+    #app {
+        display: block !important;
+        .wrapper {
+            margin: 0 auto !important;
+        }
+    }
+}
